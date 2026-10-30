@@ -1,0 +1,115 @@
+:root {
+    --color-deep-teal: #276C69;
+    --color-bordeaux: #783D52;
+    --color-lavender: #B5A2D1;
+    --color-warm-cream: #F5F0E8;
+    --color-plum: #30283D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-warm-cream);
+    color: var(--color-plum);
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-deep-teal);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+main {
+    padding-top: 4rem;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.2rem
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul a:hover {
+    text-shadow: 0px 0px 6px var(--color-lavender);
+}
+
+h1 {
+    color: var(--color-deep-teal);
+    font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+}
+
+#title-section {
+    color: var(--color-bordeaux);
+    font-weight: bold;
+    padding-bottom: 1.6rem;
+}
+
+#greeting {
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#sub-title {
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro-blurp {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    max-width: 500px;
+    text-align: left;
+}
+
+#intro-img {
+    border-radius: 50%;
+    border: solid 4px var(--color-deep-teal);
+    filter: drop-shadow(1.4rem 1rem 1.8rem var(--color-plum));
+    max-width: 250px;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: solid 1px;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color-deep-teal), rgba(0, 0, 0, 0)) 1;
+    font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+    color: #783D52;
+    font-size: 0.9rem;
+    text-align: center;
+    flex-shrink: 0;
+}

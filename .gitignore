@@ -1,0 +1,12 @@
+# Editor settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local environment files (if added later)
+.env
+.env.*
+!.env.example
