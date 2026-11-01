@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <p>Susanne Brauer</p>
-        <nav>
+        <nav id="mobile-nav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -23,6 +24,11 @@
                 <li><a href="#">Collections</a></li>
             </ul>
         </nav>
+        <button id="menu-button" aria-label="Toggel navigation" aria-expanded="false" aria-controls="mobile-nav">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </button>
     </header>
     <main>
         <section id="introduction">

@@ -2,7 +2,10 @@
 ## Intention
 This website is supposed to become like a hub of me, my career, life and hobbies with a touch of common placing.
 
-I would like to capture the different sides of me. On the side my professional side work experience, skill etc. As well as my personal side games, movies, music  and book stuff. And sor tof in bewtween my coding journey and projects I'm working on or that I have finished.
+I would like to capture the different sides of me:
+- **Professional:** my experience, skills and career
+- **Personal:** games, films, music, books and other interests
+- **In between:** my coding journey, projects, experiments and learning
 
 ## Colour Scheme
 - Deep teal (#276C69) - main (heading and navigation)
@@ -10,3 +13,21 @@ I would like to capture the different sides of me. On the side my professional s
 - Lavender (#B5A2D1) - little touches
 - Warm cream (#F5F0E8) - background
 - Plum (#30283D) - text
+
+## Responsive Design
+The design has three break points so serves 4 responsive layouts based on CSS viewport widths:
+- over 950px (menu bar)
+- 950px to 800px (menu bar)
+- 800px to 650px (menu button)
+- under 650px (menu button)
+
+## Accessibility
+- labels for expanded and collapsed menu with menu button
+- how the menu behaves when someone resizes the viewport while it's open
+
+## Planned Features
+- [ ] dark mode
+- [ ] project pages
+- [ ] coding journal
+- [ ] personal collections planning
+- [ ] deployment

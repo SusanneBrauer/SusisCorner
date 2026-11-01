@@ -12,13 +12,13 @@
 
 html, body {
     height: 100%;
+    font-size: 16px;
 }
 
 body {
     background-color: var(--color-warm-cream);
     color: var(--color-plum);
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 16px;
     width: 80%;
     max-width: 1000px;
     margin: auto;
@@ -29,6 +29,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--color-deep-teal);
     font-weight: 600;
     font-size: 1.3rem;
@@ -42,7 +43,8 @@ main {
 
 nav ul {
     display: flex;
-    gap: 1.2rem
+    gap: 1.2rem;
+    margin: 0;
 }
 
 nav ul li {
@@ -57,6 +59,10 @@ nav ul a {
 
 nav ul a:hover {
     text-shadow: 0px 0px 6px var(--color-lavender);
+}
+
+#menu-button {
+    display: none;
 }
 
 h1 {
@@ -100,7 +106,7 @@ h1 {
     border-radius: 50%;
     border: solid 4px var(--color-deep-teal);
     filter: drop-shadow(1.4rem 1rem 1.8rem var(--color-plum));
-    max-width: 250px;
+    width: 250px;
 }
 
 footer {
@@ -112,4 +118,89 @@ footer {
     font-size: 0.9rem;
     text-align: center;
     flex-shrink: 0;
+}
+
+/*format adjustments*/
+@media only screen and (max-width: 950px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open-nav {
+        display: block;
+        flex-basis: 100%;
+        order: 3;
+        border-top:solid 1px;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--color-deep-teal), rgba(0, 0, 0, 0)) 1;
+        padding-top: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    #menu-button {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        border: solid 2px var(--color-deep-teal);
+        border-radius: 8px;
+    }
+
+    .menu-bar {
+        background-color: var(--color-deep-teal);
+        height: 2px;
+        width: 22px;
+        margin: 3px;
+    }
+
+    #intro-img {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #greeting, #sub-title, #intro-blurp {
+        text-align: center;
+    }
+
+    #intro {
+        flex-direction: column;
+    }
+
+    #intro-blurp {
+        order: 2;
+    }
+
+    #intro-img {
+        order: 1;
+        width: 100px;
+    }
 }
