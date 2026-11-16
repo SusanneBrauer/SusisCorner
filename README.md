@@ -27,8 +27,9 @@ The design has three break points so serves 4 responsive layouts based on CSS vi
 
 ## Planned Features
 - [ ] dark mode
-- [ ] career page
+- [x] career page
 - [ ] project pages
 - [ ] coding journal
 - [ ] personal collections planning
 - [ ] deployment
+- [ ] add collapsing and extending animation to career page boxes to show and hide details
