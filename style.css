@@ -31,6 +31,10 @@ p, li, a {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .button {
     padding: 1rem;
     color: var(--color-warm-cream);
@@ -39,7 +43,17 @@ p, li, a {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    box-shadow: 0 0.4rem 1.8rem var(--color-plum);
+    box-shadow: 0 0.4rem 1.8rem var(--color-plum), inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+}
+
+.button:hover {
+    background-color: var(--color-bordeaux);
+}
+
+.button:active {
+    background-color: var(--color-bordeaux);
+    box-shadow: 0 0.4rem 0.8rem var(--color-plum), inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+    transform: translate(4px, 2px);
 }
 
 header {
@@ -174,6 +188,12 @@ h4 {
 .box {
     padding: 2.5rem;
 }
+
+summary h3, summary h4 {
+    display: inline-block;
+}
+
+
 
 footer {
     margin-top: 2rem;
