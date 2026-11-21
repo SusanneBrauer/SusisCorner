@@ -33,6 +33,11 @@ p, li, a {
 
 a {
     text-decoration: none;
+    color: var(--color-deep-teal);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .button {
@@ -193,7 +198,13 @@ summary h3, summary h4 {
     display: inline-block;
 }
 
-
+.tag-pill {
+    border: solid 2px var(--color-deep-teal);
+    border-radius: 1rem;
+    color: var(--color-deep-teal);
+    padding: 0.1rem 0.3rem;
+    background-color: rgba(0, 128, 128, 0.1);
+}
 
 footer {
     margin-top: 2rem;
