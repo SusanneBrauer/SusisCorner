@@ -97,6 +97,10 @@ nav ul a:hover {
     text-decoration: none;
 }
 
+.current-page {
+    color: var(--color-bordeaux);
+}
+
 #menu-button {
     display: none;
 }
