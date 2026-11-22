@@ -25,6 +25,19 @@ The design has three break points so serves 4 responsive layouts based on CSS vi
 - labels for expanded and collapsed menu with menu button
 - how the menu behaves when someone resizes the viewport while it's open
 
+## Log
+### 22/11/2026
+#### Career Page
+- current career page design ready to deploy
+- used html collapsible sections so readers can get the amount of detail they would like (*this was new feature for me I thought I had to use JavaScript to achieve this but the html integrated function was a great find*)
+- added some adjustment at smaller break points
+- added pill tags for technology covered
+- added link to Forge Repo with GitHub logo for clarity
+#### Overall
+- add links to menu
+- commented out links that have no content yet
+- add colour change to indicate the page the user is currently on
+
 ## Planned Features
 - [ ] dark mode
 - [x] career page
