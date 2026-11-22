@@ -282,6 +282,10 @@ footer {
     #intro-img {
         width: 160px;
     }
+
+    .box {
+        padding: 1rem;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -313,5 +317,21 @@ footer {
     #intro-img {
         order: 1;
         width: 100px;
+    }
+
+    .box {
+        padding: 0.3rem;
+    }
+
+    #career-overview-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #experience-impact-block, #projects-block {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
