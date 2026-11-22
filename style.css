@@ -94,6 +94,7 @@ nav ul a {
 
 nav ul a:hover {
     text-shadow: 0px 0px 6px var(--color-lavender);
+    text-decoration: none;
 }
 
 #menu-button {
@@ -198,12 +199,21 @@ summary h3, summary h4 {
     display: inline-block;
 }
 
+details ul {
+    text-align: left;
+}
+
 .tag-pill {
     border: solid 2px var(--color-deep-teal);
     border-radius: 1rem;
     color: var(--color-deep-teal);
-    padding: 0.1rem 0.3rem;
+    padding: 0.1rem 0.4rem;
     background-color: rgba(0, 128, 128, 0.1);
+}
+
+#github-inline-logo {
+    height: 1.2rem;
+    vertical-align: text-top;
 }
 
 footer {
