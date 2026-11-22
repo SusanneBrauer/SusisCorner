@@ -99,6 +99,7 @@ nav ul a:hover {
 
 .current-page {
     color: var(--color-bordeaux);
+    font-weight: 800;
 }
 
 #menu-button {
